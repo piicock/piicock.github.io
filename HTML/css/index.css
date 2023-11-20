@@ -1,0 +1,34 @@
+  @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle:wght@300;400;700&display=swap');
+/* 선택자로, tag/id/class로 CSS적용  */
+
+
+/* 웰컴 문구 */
+h1 {
+
+    
+    /* 요소 배치 */
+    display: fixed;
+    position: relative; 
+    top: 30px;
+
+    /* 폰트 */
+    font-family: 'Black Han Sans', sans-serif;
+    text-align: center;
+    font-size: 60px; /* 픽셀 단위로 크기 지정 */
+    border: 8px solid ;
+}
+
+
+div.animal {
+    position: absolute;
+    width: 20px; 
+    height: auto;  
+}
+
+div#badger { 
+    /* 요소 배치 */
+    text-align: center;
+ }
+
+
+
