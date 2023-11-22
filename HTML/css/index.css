@@ -18,17 +18,21 @@ h1 {
     border: 8px solid ;
 }
 
-
-div.animal {
-    position: absolute;
-    width: 20px; 
-    height: auto;  
-}
-
 div#badger { 
     /* 요소 배치 */
     text-align: center;
+    position: relative;
  }
+
+ .animal {
+    display: flex;
+}
+
+.animal img {
+    width: 120%;
+    height: auto;
+    margin: 1vw; 
+}
 
 
 
