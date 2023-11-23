@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원목록</title>
 </head>
 <body>
-    <!-- 회원목록 열람 페이지 -->
+  <h1>회원목록 페이지</h1>
+  <ul id="memberList"></ul>
+
+  <script>
+    // 회원목록 표시 기능 구현 (web-storage 활용)
+    var memberList = document.getElementById("memberList");
+
+    for (var i = 0; i < localStorage.length; i++) {
+      var username = localStorage.key(i);
+      var listItem = document.createElement("li");
+      listItem.textContent = username;
+      memberList.appendChild(listItem);
+    }
+  </script>
 </body>
 </html>
